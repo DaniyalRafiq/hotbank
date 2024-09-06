@@ -1,0 +1,20 @@
+.features-content {
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-content h4 {
+    font-weight: 600;
+    font-size: 54px;
+}
+
+.features-img-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.features-img{
+    height: 450px;
+}

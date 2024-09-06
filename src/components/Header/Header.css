@@ -1,0 +1,140 @@
+.header-wrraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px 0;
+    background: transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0%);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 55;
+}
+
+.header-img.img-box-content {
+    height: auto;
+    width: 185px;
+    cursor: pointer;
+}
+
+nav.nav-main ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav.nav-main ul li {
+    color: #dddddd;
+    cursor: pointer;
+}
+
+header {}
+
+/* Sticky state */
+.sticky {
+    /* Bring header into view */
+    z-index: 1000;
+    background: #11101D;
+
+    width: 100%;
+}
+
+nav.nav-main ul li .active {
+    position: relative;
+    padding-bottom: 2px;
+    color: white;
+}
+
+nav.nav-main ul li a {
+    display: block;
+    position: relative;
+    transition: .3s;
+}
+
+nav.nav-main ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    background: var(--secondary-gradient);
+    height: 1px;
+    transition: .3s;
+}
+
+nav.nav-main ul li .active:after,
+nav.nav-main ul li a:hover:after {
+    width: 100%;
+}
+
+nav.nav-main ul li a:hover {
+    padding-bottom: 2px;
+    color: white !important;
+}
+
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    background: var(--secondary-gradient);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 90;
+}
+
+.line {
+    fill: none;
+    stroke: var(--black);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+

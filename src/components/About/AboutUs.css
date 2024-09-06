@@ -1,0 +1,71 @@
+.about-us-content {
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.about-us-content h4 {
+    font-weight: 600;
+    font-size: 51px;
+}
+
+
+
+.about-us {
+    padding: 70px 0;
+}
+
+section.about-us {
+    padding: 70px 0;
+}
+
+.about-us-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 20px;
+
+
+}
+
+.about-us-card-main {
+    flex-direction: column;
+    display: flex;
+    gap: 23px;
+}
+
+.about-card-content {
+    flex-direction: column;
+    display: flex;
+    gap: 13px;
+}
+
+.about-us-card:after {
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(153.47deg, rgba(255, 255, 255, 0.555) -341.94%, #14101d8a 95.11%);
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+    transition: .3s;
+    z-index: -1;
+
+}
+
+.about-us-card:hover:after {
+    opacity: 1;
+}
+
+.about-card-content h6 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
